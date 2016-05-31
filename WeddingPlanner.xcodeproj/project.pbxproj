@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7977A1790ABAE242BD29560F /* Pods_WeddingPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64875246C4A1ADD68CAA7235 /* Pods_WeddingPlannerTests.framework */; };
+		7C3FF4D01CFE41B600966E87 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF4CF1CFE41B600966E87 /* TaskRepository.swift */; };
+		7C7F805F1CC9CA8A001E5656 /* WeddingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F805E1CC9CA8A001E5656 /* WeddingRepository.swift */; };
+		7C7F80611CC9CAEF001E5656 /* GenericRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F80601CC9CAEF001E5656 /* GenericRepository.swift */; };
+		7CB33B9E1CC83EE600CBCAC1 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB33B9D1CC83EE600CBCAC1 /* NavigationViewController.swift */; };
+		7CC8CB9C1CC6F9B100D1699D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */; };
+		7CC8CBA11CC6F9B100D1699D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8CB9F1CC6F9B100D1699D /* Main.storyboard */; };
+		7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */; };
+		7CC8CBA61CC6F9B100D1699D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8CBA51CC6F9B100D1699D /* Assets.xcassets */; };
+		7CC8CBA91CC6F9B100D1699D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8CBA71CC6F9B100D1699D /* LaunchScreen.storyboard */; };
+		7CC8CBB41CC6F9B200D1699D /* WeddingPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBB31CC6F9B200D1699D /* WeddingPlannerTests.swift */; };
+		7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBBF1CC6FAAD00D1699D /* Wedding.swift */; };
+		7CC8CBC31CC6FC9800D1699D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBC21CC6FC9800D1699D /* LoginViewController.swift */; };
+		7CC8CBC51CC710DD00D1699D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBC41CC710DD00D1699D /* User.swift */; };
+		7CC8CBC71CC7125600D1699D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBC61CC7125600D1699D /* Task.swift */; };
+		7CC8CBCA1CC713B900D1699D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBC91CC713B900D1699D /* Category.swift */; };
+		7CC8CBCC1CC7145000D1699D /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBCB1CC7145000D1699D /* Requirement.swift */; };
+		7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBCD1CC714CB00D1699D /* PayObject.swift */; };
+		7CCAE38A1CC868A3004A9088 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3891CC868A3004A9088 /* MainViewController.swift */; };
+		7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */; };
+		7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */; };
+		7CCAE3931CC89592004A9088 /* ValidationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */; };
+		7CCF74CD1CF1E642001C10E2 /* NSDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74CC1CF1E642001C10E2 /* NSDataProvider.swift */; };
+		7CCF74D11CF8DBBC001C10E2 /* LocalStorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D01CF8DBBC001C10E2 /* LocalStorageProvider.swift */; };
+		7CCF74D41CF8E07F001C10E2 /* UserDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D31CF8E07F001C10E2 /* UserDomain.swift */; };
+		7CCF74D61CF8E71B001C10E2 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */; };
+		7CCF74D81CF8E7BB001C10E2 /* LocalStorageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D71CF8E7BB001C10E2 /* LocalStorageConfiguration.swift */; };
+		7CD3C09E1CFA235B006284AC /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3C0961CFA235B006284AC /* MMDrawerBarButtonItem.m */; };
+		7CD3C09F1CFA235B006284AC /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3C0981CFA235B006284AC /* MMDrawerController.m */; };
+		7CD3C0A01CFA235B006284AC /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3C09B1CFA235B006284AC /* MMDrawerVisualState.m */; };
+		7CD3C0A11CFA235B006284AC /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3C09D1CFA235B006284AC /* UIViewController+MMDrawerController.m */; };
+		7CE7094E1CCAC89E00923495 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */; };
+		7CE709501CCACB8100923495 /* RequirementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7094F1CCACB8100923495 /* RequirementRepository.swift */; };
+		7CEE51481CC9483D00FC687A /* WeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51471CC9483D00FC687A /* WeddingViewController.swift */; };
+		7CEE514A1CC948AF00FC687A /* RequirementListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */; };
+		7CEE514C1CC9497F00FC687A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE514B1CC9497F00FC687A /* BaseViewController.swift */; };
+		7CEE514E1CC9629B00FC687A /* RequirementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE514D1CC9629B00FC687A /* RequirementTableViewCell.swift */; };
+		7CF38BC61CF0A07400F30525 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CF38BC51CF0A07400F30525 /* GoogleService-Info.plist */; };
+		7CF38BC81CF0C44900F30525 /* EndingPointConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF38BC71CF0C44900F30525 /* EndingPointConfiguration.swift */; };
+		D68C4A31050CC8B4957208ED /* Pods_WeddingPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6F7113287E7C484027783C /* Pods_WeddingPlanner.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CC8CBB01CC6F9B200D1699D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CC8CB901CC6F9B100D1699D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CC8CB971CC6F9B100D1699D;
+			remoteInfo = WeddingPlanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B8F18A5579651FD34213052 /* Pods-WeddingPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingPlanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		64875246C4A1ADD68CAA7235 /* Pods_WeddingPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeddingPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76DA97E6E84001D24ECD5DD9 /* Pods-WeddingPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingPlannerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeddingPlannerTests/Pods-WeddingPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C3FF4CF1CFE41B600966E87 /* TaskRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeddingPlanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		7C7F805E1CC9CA8A001E5656 /* WeddingRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingRepository.swift; sourceTree = "<group>"; };
+		7C7F80601CC9CAEF001E5656 /* GenericRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRepository.swift; sourceTree = "<group>"; };
+		7CB33B9D1CC83EE600CBCAC1 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		7CC8CB981CC6F9B100D1699D /* WeddingPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeddingPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CC8CBA01CC6F9B100D1699D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CC8CBA31CC6F9B100D1699D /* WeddingPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeddingPlanner.xcdatamodel; sourceTree = "<group>"; };
+		7CC8CBA51CC6F9B100D1699D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CC8CBA81CC6F9B100D1699D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CC8CBAA1CC6F9B100D1699D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC8CBAF1CC6F9B200D1699D /* WeddingPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeddingPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC8CBB31CC6F9B200D1699D /* WeddingPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingPlannerTests.swift; sourceTree = "<group>"; };
+		7CC8CBB51CC6F9B200D1699D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC8CBBF1CC6FAAD00D1699D /* Wedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wedding.swift; sourceTree = "<group>"; };
+		7CC8CBC21CC6FC9800D1699D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7CC8CBC41CC710DD00D1699D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7CC8CBC61CC7125600D1699D /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		7CC8CBC91CC713B900D1699D /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		7CC8CBCB1CC7145000D1699D /* Requirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requirement.swift; sourceTree = "<group>"; };
+		7CC8CBCD1CC714CB00D1699D /* PayObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayObject.swift; sourceTree = "<group>"; };
+		7CCAE3891CC868A3004A9088 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationExtensions.swift; sourceTree = "<group>"; };
+		7CCF74CC1CF1E642001C10E2 /* NSDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataProvider.swift; sourceTree = "<group>"; };
+		7CCF74D01CF8DBBC001C10E2 /* LocalStorageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageProvider.swift; sourceTree = "<group>"; };
+		7CCF74D31CF8E07F001C10E2 /* UserDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDomain.swift; sourceTree = "<group>"; };
+		7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
+		7CCF74D71CF8E7BB001C10E2 /* LocalStorageConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageConfiguration.swift; sourceTree = "<group>"; };
+		7CD3C0951CFA235B006284AC /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		7CD3C0961CFA235B006284AC /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		7CD3C0971CFA235B006284AC /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		7CD3C0981CFA235B006284AC /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		7CD3C0991CFA235B006284AC /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		7CD3C09A1CFA235B006284AC /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		7CD3C09B1CFA235B006284AC /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		7CD3C09C1CFA235B006284AC /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		7CD3C09D1CFA235B006284AC /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		7CE7094F1CCACB8100923495 /* RequirementRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementRepository.swift; sourceTree = "<group>"; };
+		7CEE51471CC9483D00FC687A /* WeddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingViewController.swift; sourceTree = "<group>"; };
+		7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementListViewController.swift; sourceTree = "<group>"; };
+		7CEE514B1CC9497F00FC687A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7CEE514D1CC9629B00FC687A /* RequirementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementTableViewCell.swift; sourceTree = "<group>"; };
+		7CF38BC51CF0A07400F30525 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7CF38BC71CF0C44900F30525 /* EndingPointConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndingPointConfiguration.swift; sourceTree = "<group>"; };
+		DA6F7113287E7C484027783C /* Pods_WeddingPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeddingPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CFA28332296F9E2D33F364 /* Pods-WeddingPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingPlanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		F64A36B8A9359CF4EE85183B /* Pods-WeddingPlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingPlannerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeddingPlannerTests/Pods-WeddingPlannerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CC8CB951CC6F9B100D1699D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68C4A31050CC8B4957208ED /* Pods_WeddingPlanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC8CBAC1CC6F9B200D1699D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7977A1790ABAE242BD29560F /* Pods_WeddingPlannerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C4DE63C1CC835D400FED72D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF74DA1CF8E89E001C10E2 /* Provider */,
+				7CD3C0941CFA229B006284AC /* MMDrawer */,
+				7CF38BC51CF0A07400F30525 /* GoogleService-Info.plist */,
+				7CC8CBAA1CC6F9B100D1699D /* Info.plist */,
+				7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */,
+				7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		7CC8CB8F1CC6F9B100D1699D = {
+			isa = PBXGroup;
+			children = (
+				7CC8CB9A1CC6F9B100D1699D /* WeddingPlanner */,
+				7CC8CBB21CC6F9B200D1699D /* WeddingPlannerTests */,
+				7CC8CB991CC6F9B100D1699D /* Products */,
+				C25353BC12C67644EA320F20 /* Pods */,
+				E9F8BCE04EA442B9CA1D5797 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7CC8CB991CC6F9B100D1699D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8CB981CC6F9B100D1699D /* WeddingPlanner.app */,
+				7CC8CBAF1CC6F9B200D1699D /* WeddingPlannerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CC8CB9A1CC6F9B100D1699D /* WeddingPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				7CCAE38F1CC88749004A9088 /* Business */,
+				7C4DE63C1CC835D400FED72D /* Library */,
+				7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */,
+				7CC8CB9F1CC6F9B100D1699D /* Main.storyboard */,
+				7CC8CBA71CC6F9B100D1699D /* LaunchScreen.storyboard */,
+				7CC8CBA51CC6F9B100D1699D /* Assets.xcassets */,
+			);
+			path = WeddingPlanner;
+			sourceTree = "<group>";
+		};
+		7CC8CBB21CC6F9B200D1699D /* WeddingPlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8CBB31CC6F9B200D1699D /* WeddingPlannerTests.swift */,
+				7CC8CBB51CC6F9B200D1699D /* Info.plist */,
+			);
+			path = WeddingPlannerTests;
+			sourceTree = "<group>";
+		};
+		7CC8CBBE1CC6FA9300D1699D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8CBBF1CC6FAAD00D1699D /* Wedding.swift */,
+				7CC8CBC41CC710DD00D1699D /* User.swift */,
+				7CC8CBC61CC7125600D1699D /* Task.swift */,
+				7CC8CBC91CC713B900D1699D /* Category.swift */,
+				7CC8CBCB1CC7145000D1699D /* Requirement.swift */,
+				7CC8CBCD1CC714CB00D1699D /* PayObject.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7CC8CBC11CC6FC7600D1699D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7CCAE38D1CC88719004A9088 /* Extension */,
+				7CEE51421CC8BDFD00FC687A /* Objects */,
+				7CEE514B1CC9497F00FC687A /* BaseViewController.swift */,
+				7CC8CBC21CC6FC9800D1699D /* LoginViewController.swift */,
+				7CB33B9D1CC83EE600CBCAC1 /* NavigationViewController.swift */,
+				7CCAE3891CC868A3004A9088 /* MainViewController.swift */,
+				7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */,
+				7CEE51471CC9483D00FC687A /* WeddingViewController.swift */,
+				7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7CC8CBC81CC7134400D1699D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7C7F805E1CC9CA8A001E5656 /* WeddingRepository.swift */,
+				7C7F80601CC9CAEF001E5656 /* GenericRepository.swift */,
+				7CE7094F1CCACB8100923495 /* RequirementRepository.swift */,
+				7C3FF4CF1CFE41B600966E87 /* TaskRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		7CCAE38D1CC88719004A9088 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */,
+				7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */,
+				7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		7CCAE38F1CC88749004A9088 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF74D21CF8E053001C10E2 /* Domain */,
+				7CC8CBC11CC6FC7600D1699D /* Controller */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
+		7CCF74D21CF8E053001C10E2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8CBBE1CC6FA9300D1699D /* Model */,
+				7CCF74D91CF8E7EE001C10E2 /* Configuration */,
+				7CC8CBC81CC7134400D1699D /* Repository */,
+				7CCF74D31CF8E07F001C10E2 /* UserDomain.swift */,
+				7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		7CCF74D91CF8E7EE001C10E2 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7CF38BC71CF0C44900F30525 /* EndingPointConfiguration.swift */,
+				7CCF74D71CF8E7BB001C10E2 /* LocalStorageConfiguration.swift */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		7CCF74DA1CF8E89E001C10E2 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF74D01CF8DBBC001C10E2 /* LocalStorageProvider.swift */,
+				7CCF74CC1CF1E642001C10E2 /* NSDataProvider.swift */,
+			);
+			name = Provider;
+			sourceTree = "<group>";
+		};
+		7CD3C0941CFA229B006284AC /* MMDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				7CD3C0951CFA235B006284AC /* MMDrawerBarButtonItem.h */,
+				7CD3C0961CFA235B006284AC /* MMDrawerBarButtonItem.m */,
+				7CD3C0971CFA235B006284AC /* MMDrawerController.h */,
+				7CD3C0981CFA235B006284AC /* MMDrawerController.m */,
+				7CD3C0991CFA235B006284AC /* MMDrawerController+Subclass.h */,
+				7CD3C09A1CFA235B006284AC /* MMDrawerVisualState.h */,
+				7CD3C09B1CFA235B006284AC /* MMDrawerVisualState.m */,
+				7CD3C09C1CFA235B006284AC /* UIViewController+MMDrawerController.h */,
+				7CD3C09D1CFA235B006284AC /* UIViewController+MMDrawerController.m */,
+			);
+			name = MMDrawer;
+			sourceTree = "<group>";
+		};
+		7CEE51421CC8BDFD00FC687A /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7CEE514D1CC9629B00FC687A /* RequirementTableViewCell.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		C25353BC12C67644EA320F20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F18A5579651FD34213052 /* Pods-WeddingPlanner.debug.xcconfig */,
+				E4CFA28332296F9E2D33F364 /* Pods-WeddingPlanner.release.xcconfig */,
+				76DA97E6E84001D24ECD5DD9 /* Pods-WeddingPlannerTests.debug.xcconfig */,
+				F64A36B8A9359CF4EE85183B /* Pods-WeddingPlannerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9F8BCE04EA442B9CA1D5797 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA6F7113287E7C484027783C /* Pods_WeddingPlanner.framework */,
+				64875246C4A1ADD68CAA7235 /* Pods_WeddingPlannerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CC8CB971CC6F9B100D1699D /* WeddingPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC8CBB81CC6F9B200D1699D /* Build configuration list for PBXNativeTarget "WeddingPlanner" */;
+			buildPhases = (
+				C5FD1215B93AD8A05D184933 /* 📦 Check Pods Manifest.lock */,
+				7CC8CB941CC6F9B100D1699D /* Sources */,
+				7CC8CB951CC6F9B100D1699D /* Frameworks */,
+				7CC8CB961CC6F9B100D1699D /* Resources */,
+				4FED81FCBC60D34DCC4C8D79 /* 📦 Embed Pods Frameworks */,
+				60CD007E1D6BD5186B4CFF9A /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeddingPlanner;
+			productName = WeddingPlanner;
+			productReference = 7CC8CB981CC6F9B100D1699D /* WeddingPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CC8CBAE1CC6F9B200D1699D /* WeddingPlannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC8CBBB1CC6F9B200D1699D /* Build configuration list for PBXNativeTarget "WeddingPlannerTests" */;
+			buildPhases = (
+				31E4778D7B06A9ADC6C85E20 /* 📦 Check Pods Manifest.lock */,
+				7CC8CBAB1CC6F9B200D1699D /* Sources */,
+				7CC8CBAC1CC6F9B200D1699D /* Frameworks */,
+				7CC8CBAD1CC6F9B200D1699D /* Resources */,
+				277BD6D9685EAEC02EC83578 /* 📦 Embed Pods Frameworks */,
+				ED630D1896C256CD47D00B10 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CC8CBB11CC6F9B200D1699D /* PBXTargetDependency */,
+			);
+			name = WeddingPlannerTests;
+			productName = WeddingPlannerTests;
+			productReference = 7CC8CBAF1CC6F9B200D1699D /* WeddingPlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CC8CB901CC6F9B100D1699D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Felipe Assunção";
+				TargetAttributes = {
+					7CC8CB971CC6F9B100D1699D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9KT7E833CG;
+					};
+					7CC8CBAE1CC6F9B200D1699D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9KT7E833CG;
+						TestTargetID = 7CC8CB971CC6F9B100D1699D;
+					};
+				};
+			};
+			buildConfigurationList = 7CC8CB931CC6F9B100D1699D /* Build configuration list for PBXProject "WeddingPlanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CC8CB8F1CC6F9B100D1699D;
+			productRefGroup = 7CC8CB991CC6F9B100D1699D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CC8CB971CC6F9B100D1699D /* WeddingPlanner */,
+				7CC8CBAE1CC6F9B200D1699D /* WeddingPlannerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CC8CB961CC6F9B100D1699D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC8CBA91CC6F9B100D1699D /* LaunchScreen.storyboard in Resources */,
+				7CF38BC61CF0A07400F30525 /* GoogleService-Info.plist in Resources */,
+				7CC8CBA61CC6F9B100D1699D /* Assets.xcassets in Resources */,
+				7CC8CBA11CC6F9B100D1699D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC8CBAD1CC6F9B200D1699D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		277BD6D9685EAEC02EC83578 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeddingPlannerTests/Pods-WeddingPlannerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31E4778D7B06A9ADC6C85E20 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4FED81FCBC60D34DCC4C8D79 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60CD007E1D6BD5186B4CFF9A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5FD1215B93AD8A05D184933 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED630D1896C256CD47D00B10 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeddingPlannerTests/Pods-WeddingPlannerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CC8CB941CC6F9B100D1699D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7F805F1CC9CA8A001E5656 /* WeddingRepository.swift in Sources */,
+				7CC8CBCC1CC7145000D1699D /* Requirement.swift in Sources */,
+				7CCF74D41CF8E07F001C10E2 /* UserDomain.swift in Sources */,
+				7CC8CB9C1CC6F9B100D1699D /* AppDelegate.swift in Sources */,
+				7CCAE3931CC89592004A9088 /* ValidationExtensions.swift in Sources */,
+				7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */,
+				7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */,
+				7CF38BC81CF0C44900F30525 /* EndingPointConfiguration.swift in Sources */,
+				7CEE514C1CC9497F00FC687A /* BaseViewController.swift in Sources */,
+				7CCF74D81CF8E7BB001C10E2 /* LocalStorageConfiguration.swift in Sources */,
+				7CCAE38A1CC868A3004A9088 /* MainViewController.swift in Sources */,
+				7CB33B9E1CC83EE600CBCAC1 /* NavigationViewController.swift in Sources */,
+				7CEE51481CC9483D00FC687A /* WeddingViewController.swift in Sources */,
+				7C7F80611CC9CAEF001E5656 /* GenericRepository.swift in Sources */,
+				7CCF74CD1CF1E642001C10E2 /* NSDataProvider.swift in Sources */,
+				7C3FF4D01CFE41B600966E87 /* TaskRepository.swift in Sources */,
+				7CC8CBC51CC710DD00D1699D /* User.swift in Sources */,
+				7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */,
+				7CD3C09F1CFA235B006284AC /* MMDrawerController.m in Sources */,
+				7CCF74D61CF8E71B001C10E2 /* SyncManager.swift in Sources */,
+				7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */,
+				7CE709501CCACB8100923495 /* RequirementRepository.swift in Sources */,
+				7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */,
+				7CC8CBC71CC7125600D1699D /* Task.swift in Sources */,
+				7CD3C0A01CFA235B006284AC /* MMDrawerVisualState.m in Sources */,
+				7CD3C0A11CFA235B006284AC /* UIViewController+MMDrawerController.m in Sources */,
+				7CEE514A1CC948AF00FC687A /* RequirementListViewController.swift in Sources */,
+				7CD3C09E1CFA235B006284AC /* MMDrawerBarButtonItem.m in Sources */,
+				7CE7094E1CCAC89E00923495 /* UIColorExtensions.swift in Sources */,
+				7CC8CBC31CC6FC9800D1699D /* LoginViewController.swift in Sources */,
+				7CCF74D11CF8DBBC001C10E2 /* LocalStorageProvider.swift in Sources */,
+				7CC8CBCA1CC713B900D1699D /* Category.swift in Sources */,
+				7CEE514E1CC9629B00FC687A /* RequirementTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC8CBAB1CC6F9B200D1699D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC8CBB41CC6F9B200D1699D /* WeddingPlannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CC8CBB11CC6F9B200D1699D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CC8CB971CC6F9B100D1699D /* WeddingPlanner */;
+			targetProxy = 7CC8CBB01CC6F9B200D1699D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CC8CB9F1CC6F9B100D1699D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC8CBA01CC6F9B100D1699D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CC8CBA71CC6F9B100D1699D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC8CBA81CC6F9B100D1699D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CC8CBB61CC6F9B200D1699D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CC8CBB71CC6F9B200D1699D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CC8CBB91CC6F9B200D1699D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B8F18A5579651FD34213052 /* Pods-WeddingPlanner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = WeddingPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acquire.WeddingPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeddingPlanner/WeddingPlanner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CC8CBBA1CC6F9B200D1699D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4CFA28332296F9E2D33F364 /* Pods-WeddingPlanner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = WeddingPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acquire.WeddingPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeddingPlanner/WeddingPlanner-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		7CC8CBBC1CC6F9B200D1699D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76DA97E6E84001D24ECD5DD9 /* Pods-WeddingPlannerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WeddingPlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acquire.WeddingPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeddingPlanner.app/WeddingPlanner";
+			};
+			name = Debug;
+		};
+		7CC8CBBD1CC6F9B200D1699D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F64A36B8A9359CF4EE85183B /* Pods-WeddingPlannerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WeddingPlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acquire.WeddingPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeddingPlanner.app/WeddingPlanner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CC8CB931CC6F9B100D1699D /* Build configuration list for PBXProject "WeddingPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC8CBB61CC6F9B200D1699D /* Debug */,
+				7CC8CBB71CC6F9B200D1699D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC8CBB81CC6F9B200D1699D /* Build configuration list for PBXNativeTarget "WeddingPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC8CBB91CC6F9B200D1699D /* Debug */,
+				7CC8CBBA1CC6F9B200D1699D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC8CBBB1CC6F9B200D1699D /* Build configuration list for PBXNativeTarget "WeddingPlannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC8CBBC1CC6F9B200D1699D /* Debug */,
+				7CC8CBBD1CC6F9B200D1699D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7CC8CBA31CC6F9B100D1699D /* WeddingPlanner.xcdatamodel */,
+			);
+			currentVersion = 7CC8CBA31CC6F9B100D1699D /* WeddingPlanner.xcdatamodel */;
+			path = WeddingPlanner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7CC8CB901CC6F9B100D1699D /* Project object */;
+}

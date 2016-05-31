@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bridge_background" translatesAutoresizingMaskIntoConstraints="NO" id="WtH-y9-EIl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uN4-St-ZDo">
+                                <rect key="frame" x="169" y="354" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="Vgh-7u-Pei"/>
+                                    <constraint firstAttribute="height" constant="37" id="pfg-sH-mIQ"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedding Planner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpn-Cu-ea3">
+                                <rect key="frame" x="25" y="200" width="324" height="52"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The best way of manage your wedding tasks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pe9-cC-7h6">
+                                <rect key="frame" x="72" y="260" width="231.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uN4-St-ZDo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7iq-6R-pQr"/>
+                            <constraint firstItem="WtH-y9-EIl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="978-7N-yCr"/>
+                            <constraint firstItem="Rpn-Cu-ea3" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="180" id="FhS-nD-H3i"/>
+                            <constraint firstItem="pe9-cC-7h6" firstAttribute="top" secondItem="Rpn-Cu-ea3" secondAttribute="bottom" constant="8" id="I5T-qS-oSg"/>
+                            <constraint firstItem="uN4-St-ZDo" firstAttribute="top" secondItem="pe9-cC-7h6" secondAttribute="bottom" constant="80" id="QmI-yj-Jpw"/>
+                            <constraint firstItem="uN4-St-ZDo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="WFA-AS-BRr"/>
+                            <constraint firstItem="WtH-y9-EIl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ebz-tb-lkN"/>
+                            <constraint firstItem="pe9-cC-7h6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pkc-rQ-3MO"/>
+                            <constraint firstItem="Rpn-Cu-ea3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rKB-bJ-WId"/>
+                            <constraint firstAttribute="trailing" secondItem="WtH-y9-EIl" secondAttribute="trailing" id="tPz-KL-TJG"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="WtH-y9-EIl" secondAttribute="bottom" id="xJ8-fb-5oE"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login_bridge_background" width="1080" height="1920"/>
+    </resources>
+</document>

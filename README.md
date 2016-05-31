@@ -1,2 +1,1 @@
-# allianceplanner-ios
-WeddingPlanner IOS APP
+#IOS APP
